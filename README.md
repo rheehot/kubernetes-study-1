@@ -21,7 +21,7 @@ $ brew install minikube
 #### :pushpin: 쿠버네티스를 컨트롤 할 수 있는 `kubectl`을 설치합니다.
 
 ```sh
-$ curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+$ curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl"
 
 $ chmod +x ./kubectl
 $ mv ./kubectl /usr/local/bin/kubectl
