@@ -6,7 +6,7 @@
 
 ## 환경 구성
 
-HyperVisor중에서 `virtualbox`를 설치합니다.
+:pin: **HyperVisor중에서 `virtualbox`를 설치합니다.**
 
 ```sh
 $ brew cask install virtualbox virtualbox-extension-pack
@@ -14,7 +14,7 @@ $ brew cask install virtualbox virtualbox-extension-pack
 
 <br>
 
-로컬에서 쿠버네티스를 쉽게 실행시켜주는 `minikube`를 설치합니다.
+:pin: 로컬에서 쿠버네티스를 쉽게 실행시켜주는 `minikube`를 설치합니다.
 
 ```sh
 $ brew install minikube
@@ -22,7 +22,7 @@ $ brew install minikube
 
 <br>
 
-쿠버네티스를 컨트롤 할 수 있는 `kubectl`을 설치합니다.
+:pin: 쿠버네티스를 컨트롤 할 수 있는 `kubectl`을 설치합니다.
 
 ```sh
 $ curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
@@ -33,13 +33,13 @@ $ mv ./kubectl /usr/local/bin/kubectl
 
 <br>
 
-`minkube`를 `virtualbox` 드라이버로 실행합니다.
+:pin: `minkube`를 `virtualbox` 드라이버로 실행합니다.
 
 ```sh
 $ minikube start --vm-driver=virtualbox
 ```
 
-쿠버네티스 클러스터의 대시보드를 확인하고 싶으면 아래와 같이 명령어를 입력합니다.
+:pin: 쿠버네티스 클러스터의 대시보드를 확인하고 싶으면 아래와 같이 명령어를 입력합니다.
 
 ```sh
 $ minikube dashboard
