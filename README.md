@@ -8,7 +8,7 @@
 
 HyperVisor중에서 `virtualbox`를 설치합니다.
 
-```sh
+```zsh
 $ brew cask install virtualbox virtualbox-extension-pack
 ```
 
