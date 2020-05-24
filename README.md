@@ -8,15 +8,19 @@
 
 HyperVisor중에서 `virtualbox`를 설치합니다.
 
-```zsh
+```sh
 $ brew cask install virtualbox virtualbox-extension-pack
 ```
+
+<br>
 
 로컬에서 쿠버네티스를 쉽게 실행시켜주는 `minikube`를 설치합니다.
 
 ```sh
 $ brew install minikube
 ```
+
+<br>
 
 쿠버네티스를 컨트롤 할 수 있는 `kubectl`을 설치합니다.
 
@@ -26,6 +30,8 @@ $ curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s ht
 $ chmod +x ./kubectl
 $ mv ./kubectl /usr/local/bin/kubectl
 ```
+
+<br>
 
 `minkube`를 `virtualbox` 드라이버로 실행합니다.
 
