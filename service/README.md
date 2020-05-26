@@ -47,7 +47,11 @@ $ kubectl apply -f service-node-port.yml
 - Node 2 : 192.168.0.32:`30000` (Pod-2 있음)
 - Service IP : 10.101.147.131
 
-:pushpin: IP와 Port를 통해 접속하면 어떤 노드인지와 상관없이 Service에 바로 연결된다. 하지만 `externalTrafficPolicy: Local`을 설정하면 해당 노드의 Pod에만 접근한다.
+:pushpin: IP와 Port를 통해 접속하면 어떤 노드인지와 상관없이 Service에 바로 연결된다.
+
+<br>
+
+:pushpin: 하지만 `externalTrafficPolicy: Local`을 설정하면 해당 노드의 Pod에만 접근한다.
 
 - externalTrafficPolicy 설정을 하지 않음
 
