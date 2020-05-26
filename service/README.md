@@ -18,7 +18,7 @@ $ kubectl apply -f service-cluster-ip.yml
 $ kubectl get service
 ```
 
-쿠버네티스 클러스터 내에서는 Service IP에 접근할 수 있고, 외부에서는 접근할 수 없다.
+:pencil: 쿠버네티스 클러스터 내에서는 Service IP에 접근할 수 있고, 외부에서는 접근할 수 없다.
 
 ```sh
 # << minikube 클러스터 환경에서 테스트 >>
@@ -41,15 +41,15 @@ Hostname : pod-1
 $ kubectl apply -f service-node-port.yml
 ```
 
-쿠버네티스 클러스터의 연결되어 있는 모든 노드에 대해서 `동일한 포트`가 할당된다.
+:pencil: 쿠버네티스 클러스터의 연결되어 있는 모든 노드에 대해서 `동일한 포트`가 할당된다.
 
-- Node 1 : 192.168.0.31:30000 (Pod-1 있음)
-- Node 2 : 192.168.0.32:30000 (Pod-2 있음)
-- Service IP : 10.101.147.131
+- `Node 1 : 192.168.0.31:30000 (Pod-1 있음)`
+- `Node 2 : 192.168.0.32:30000 (Pod-2 있음)`
+- `Service IP : 10.101.147.131`
 
-어느 노드던지 해당 IP와 Port를 통해 접속하면 Service에 바로 연결된다. 하지만 `externalTrafficPolicy: Local`을 설정하면 해당 노드의 Pod에만 접근한다.
+:pencil: 어느 노드던지 해당 IP와 Port를 통해 접속하면 Service에 바로 연결된다. 하지만 `externalTrafficPolicy: Local`을 설정하면 해당 노드의 Pod에만 접근한다.
 
-> externalTrafficPolicy 설정을 하지 않음
+- `externalTrafficPolicy 설정을 하지 않음`
 
 ```sh
 # << 로컬 환경에서 테스트 >>
@@ -77,7 +77,7 @@ $ curl 192.168.0.31:30000
 Hostname : pod-1
 ```
 
-> externalTrafficPolicy: Local로 설정함
+- `externalTrafficPolicy: Local로 설정함`
 
 ```sh
 # << 로컬 환경에서 테스트 >>
@@ -96,7 +96,7 @@ $ curl 192.168.0.32:30000
 Hostname : pod-2
 ```
 
-만약 pod-1이 없으면, `192.168.0.31:30000`로 요청을 날렸을 때 접근이 안된다.
+:pencil: 만약 pod-1이 없으면, `192.168.0.31:30000`로 요청을 날렸을 때 접근이 안된다.
 
 ```sh
 $ curl 192.168.0.31:30000/hostname
@@ -107,7 +107,7 @@ $ curl 192.168.0.31:30000/hostname
 
 ## LoadBalancer 타입으로 Service 적용하기
 
-로드 밸런서타입은 외부를 노출시켜줄 플러그인을 설치해서 사용하면 된다.
+:pencil: 로드 밸런서타입은 외부를 노출시켜줄 플러그인을 설치해서 사용하면 된다.
 
 <br>
 

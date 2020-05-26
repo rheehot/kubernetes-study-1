@@ -45,6 +45,8 @@ $ minikube dashboard
 
 - [Pod 실습](https://github.com/bestdevhyo1225/kubernetes-study/tree/master/pod)
 
+- [Service 실습](https://github.com/bestdevhyo1225/kubernetes-study/tree/master/service)
+
 <br>
 
 ## 참고
