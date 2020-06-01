@@ -47,6 +47,8 @@ $ minikube dashboard
 
 - [Service 실습](https://github.com/bestdevhyo1225/kubernetes-study/tree/master/service)
 
+- [Volume 실습](https://github.com/bestdevhyo1225/kubernetes-study/tree/master/volume)
+
 <br>
 
 ## 참고
