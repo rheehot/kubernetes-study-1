@@ -87,6 +87,8 @@ $ kubectl exec pod-file -it -c container -- /bin/bash
 [root@pod-file /]$ env
 ```
 
+<br>
+
 ## Volume Mount (File)
 
 Pod를 생성합니다.
