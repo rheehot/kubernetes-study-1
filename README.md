@@ -49,6 +49,8 @@ $ minikube dashboard
 
 - [Volume 실습](https://github.com/bestdevhyo1225/kubernetes-study/tree/master/volume)
 
+- [ConfigMap, Secret 실습](https://github.com/bestdevhyo1225/kubernetes-study/tree/master/configmap-secret)
+
 <br>
 
 ## 참고
