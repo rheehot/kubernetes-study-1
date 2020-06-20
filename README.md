@@ -51,6 +51,8 @@ $ minikube dashboard
 
 - [ConfigMap, Secret 실습](https://github.com/bestdevhyo1225/kubernetes-study/tree/master/configmap-secret)
 
+- [Namespace, ResourceQuota, LimitRange 실습](https://github.com/bestdevhyo1225/kubernetes-study/tree/master/namespace-resourcequota-limitrange)
+
 <br>
 
 ## 참고
