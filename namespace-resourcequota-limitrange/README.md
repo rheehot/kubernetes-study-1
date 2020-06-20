@@ -128,3 +128,9 @@ $ kubectl apply -f limit-range-exception-1.yml
 
 $ kubectl apply -f limit-range-exception-2.yml
 ```
+
+<br>
+
+## 참고
+
+- [Namespace, ResourceQuota, LimitRange 강의 자료](https://kubetm.github.io/practice/beginner/object-namespace_resourcequota_limitrange/)
